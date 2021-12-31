@@ -1,3 +1,20 @@
+# Learning Management System
+
+Updated: January 2022
+
+## Authors
+* Jay Gurjar
+* Kai Wang
+* Kundai Dziwa
+* Ali Siddiqi
+
+# Introduction
+
+The learning management system is a lightweight web application which assists in student learning. 
+This web application allows multiple user end points such as student, teacher and admin. Each student can enroll in multiple courses,
+view class list, upload files for grading and download files uploaded by the teacher. A teacher can track the progression 
+of each student in specific classes that they are teaching, view assignments and give feedback. An admin has the priviledge to sent student-teacher 
+evaluation forms and see who is the best and worst teachers for each class.
 
 
 
@@ -20,5 +37,8 @@
 
 ```pip install flask-MYSQL```
 
+```pip install --upgrade setuptools```
+
+```pip install --only-binary :all: flask-mysqldb```
 
 
