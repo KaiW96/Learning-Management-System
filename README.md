@@ -17,11 +17,15 @@ of each student in specific classes that they are teaching, view assignments and
 send student-teacher evaluation forms to see who is the best and worst teachers for each class.
 
 
+# Installation
 
-
-
-
-#Installation
+Steps to compile and run this application
+  1. Clone The Repository on your local device.
+  2. If your local device already has a mysql table that is named "lmsdb", drop it.
+  3. Source the sql file on the MySQL Command Line(make sure to include your full path in the command)
+  
+  For example:
+  ```C:\Users\---Your path---\Learning-Management-System\database\lmsdb.sql```
 
 ```npm install```
 
