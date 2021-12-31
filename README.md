@@ -58,3 +58,8 @@ you will need to download the connector from the website https://www.lfd.uci.edu
 	```cd backend```
    then
 	```python app.py```
+	
+## Sample Screenshots
+
+## Login Page:
+<img width="884" alt="loginpage" src="https://user-images.githubusercontent.com/77874716/147809037-7941cd8a-0e74-4829-bd77-4a5d810537a7.PNG">
