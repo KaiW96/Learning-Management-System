@@ -25,12 +25,12 @@ Steps to compile and run this application
 2. If your local device already has a mysql table that is named "lmsdb", drop it.
 3. Source the sql file on the MySQL Command Line(make sure to include your full path in the command)
   
-  For example:
+For example:
   ```C:\Users\---Your path---\Learning-Management-System\database\lmsdb.sql```
   
 4. Navigate back to Learning-Management-System folder and in a terminal, enter the following commands
 
-```npm install```
+	```npm install```
 
 ```npm install file-saver```
 
