@@ -32,37 +32,29 @@ For example:
 
 	```npm install```
 
-```npm install file-saver```
-
-```npm start```
+	```npm install file-saver```
 
 5. Now we create a virtual environment in python
 
-```python -m venv env```
+	```python -m venv env```
 
-```.\env\bin\activate```
+	```.\env\bin\activate```
 
-```pip install flask```
+	```pip install flask```
 
 6. A mysqlclient wheel file must be installed to install flask mysql connector. A wheel file which connects
 Python 3.9 flask to MySQL is included in the wheel folder of this repository. If you are using a different version of python then 
 you will need to download the connector from the website https://www.lfd.uci.edu/~gohlke/pythonlibs/.
 
-```pip install C:\Users\---Your Path---\mysqlclient-1.4.6-cp39-cp39-win_amd64.whl```
+	```pip install C:\Users\---Your Path---\mysqlclient-1.4.6-cp39-cp39-win_amd64.whl```
 
 7. After the wheel file is installed, you will now be able to install the actual flask MySQL connector using the command below.
 
-```pip install flask-mysqldb```
+	```pip install flask-mysqldb```
 
-
-
-
-
-
-```pip install flask-MYSQL```
-
-```pip install --upgrade setuptools```
-
-```pip install --only-binary :all: flask-mysqldb```
-
-
+8. Now that you have all the dependencies needed to run this application, we will open two terminals. In the first terminal run
+	```npm start```
+   In the second terminal, go to the backend directory by first entering 
+	```cd backend```
+   then
+	```python app.py```
