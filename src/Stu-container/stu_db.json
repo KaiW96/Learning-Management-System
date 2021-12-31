@@ -1,0 +1,198 @@
+{
+    "courseData": [
+        {
+            "courseID": "471",
+            "name": "CPSC 471 - Database Management Systems",
+            "time": "September 06 2021 - December 24 2021",
+            "path": "/Course_main"
+        },
+        {
+            "courseID": "480",
+            "name": "CPSC 480 - Principles of Software Design",
+            "time": "September 06 2021 - December 24 2021",
+            "path": "/Course_main"
+        },
+        {
+            "courseID": "457",
+            "name": "CPSC 457 - Operating Systems",
+            "time": "September 06 2021 - December 24 2021",
+            "path": "/Course_main"
+        },
+        {
+            "courseID": "511",
+            "name": "CPSC 511 - Embedded Systems",
+            "time": "September 06 2021 - December 24 2021",
+            "path": "/Course_main"
+        }
+    ],
+    "LecturesData": [
+        {
+            "name": "Tuple Relational Calculus",
+            "instructor": "Yuekang Wang (Prof.)",
+            "date": "MWF - 1:00pm (50min)",
+            "filename": "filename"
+        },
+        {
+            "course_id": "203",
+            "ins_id": "308",
+            "name": "SQL Databases",
+            "instructor": "Yuekang Wang (Prof.)",
+            "date": "MWF - 1:00pm (50min)",
+            "filename": "filename"
+        },
+        {
+            "course_id": "203",
+            "ins_id": "310",
+            "name": "Relational Algebra",
+            "instructor": "Jayson jar (Prof.)",
+            "date": "MWF - 1:00pm (50min)",
+            "filename": "filename"
+        },
+        {
+            "course_id": "203",
+            "ins_id": "311",
+            "name": "XML Queries",
+            "instructor": "Simba Doppl (Prof.)",
+            "date": "MWF - 1:00pm (50min)",
+            "filename": "filename"
+        }
+    ],
+    "DocumentData": [
+        {
+            "course_id": "203",
+            "name": "HW1",
+            "instructor": "Yuekang Wang (Prof.)",
+            "date": "Nov 30 - 12pm",
+            "filename": "filename"
+        },
+        {
+            "course_id": "203",
+            "name": "HW2",
+            "instructor": "Yuekang Wan",
+            "date": "Nov 30 - 12pm",
+            "filename": "filename"
+        },
+        {
+            "course_id": "203",
+            "name": "HW3",
+            "instructor": "Yuekang",
+            "date": "Nov 30 - 12pm",
+            "filename": "filename"
+        },
+        {
+            "course_id": "203",
+            "name": "HW4",
+            "instructor": "Yuekang Wang (Prof.)",
+            "date": "Nov 30 - 12pm",
+            "filename": "filename"
+        }
+    ],
+    "EvaluationData": [
+        {
+            "sID": "1007",
+            "tID": "308",
+            "student": "Kundai Dziwa",
+            "q1": "7",
+            "q2": "6",
+            "q3": "7",
+            "q4": "6",
+            "q5": "7",
+            "q6": "6",
+            "q7": "6",
+            "q8": "7",
+            "q9": "6",
+            "q10": "6",
+            "comments": "comments"
+        }
+    ],
+    "GradesData": [
+        {
+            "course": "203",
+            "s_id": "1233",
+            "s_name": "kunlive dee",
+            "type": "Quiz",
+            "title": "Midterm Practice Quiz 1",
+            "weight": "18/20",
+            "grade": "90%",
+            "feedback": "Teacher feedback and test results and further information here."
+        }
+    ],
+    "DropboxData": [
+        {
+            "course": "432",
+            "student": "Jayson Jar",
+            "due": "12/12/2021",
+            "name": "HW3 and HW4",
+            "filename": "Jayson_HW3",
+            "grade": "75%",
+            "feedback": "N/A",
+            "downloadURL": "N/A",
+            "fileContents": "N/A"
+        },
+        {
+            "course": "439",
+            "student": "Jerry gajar",
+            "due": "12/12/2021",
+            "name": "Routing",
+            "filename": "Jerry_Routing",
+            "grade": "75%",
+            "feedback": "N/A",
+            "downloadURL": "N/A",
+            "fileContents": "N/A"
+        }
+    ],
+    "StudentData": [
+        {
+            "sID": "1007",
+            "first_name": "Kundai",
+            "last_name": "Dziwa",
+            "username": "Kundai987",
+            "role": "Student",
+            "dob": "Mar 10, 2000",
+            "phone": "(403) 123-7654",
+            "email": "example@gmail.com"
+        }
+    ],
+    "TeacherData": [
+        {
+            "tID": "308",
+            "first_name": "Johnny",
+            "last_name": "Does",
+            "username": "jhnd987",
+            "role": "Teacher",
+            "dob": "Mar 10, 2000",
+            "phone": "(403) 123-7654",
+            "email": "example@gmail.com"
+        },
+        {
+            "tID": "309",
+            "first_name": "Johnny",
+            "last_name": "Does",
+            "username": "jhnd987",
+            "role": "Teacher",
+            "dob": "Mar 10, 2000",
+            "phone": "(403) 123-7654",
+            "email": "example@gmail.com"
+        },
+        {
+            "tID": "311",
+            "first_name": "Johnny",
+            "last_name": "Does",
+            "username": "jhnd987",
+            "role": "Teacher",
+            "dob": "Mar 10, 2000",
+            "phone": "(403) 123-7654",
+            "email": "example@gmail.com"
+        },
+        {
+            "tID": "312",
+            "first_name": "Johnny",
+            "last_name": "Does",
+            "username": "jhnd987",
+            "role": "Teacher",
+            "dob": "Mar 10, 2000",
+            "phone": "(403) 123-7654",
+            "email": "example@gmail.com"
+        }
+    ]
+}
