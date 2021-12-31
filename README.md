@@ -67,9 +67,8 @@ you will need to download the connector from the website https://www.lfd.uci.edu
 ## Student Page:
 <img width="891" alt="StudentPage" src="https://user-images.githubusercontent.com/77874716/147809161-ff0e0549-50e7-4c87-a831-b8bfdf0b5661.PNG">
 
-## Teacher Page, uploading assignment: 
-<img width="400" alt="TeacherUpload" src="https://user-images.githubusercontent.com/77874716/147809330-e038539d-6eac-453e-95a9-4843495eb0cc.PNG"/>     <img width="400" img height = "300" alt="StudentDownload" src="https://user-images.githubusercontent.com/77874716/147809391-ebf7ed5f-d002-4487-8bc8-2c0aee31a1a1.PNG"/>
+## Teacher uploading an assignment, the Student can now download it: 
+<img width="400" alt="TeacherUpload" src="https://user-images.githubusercontent.com/77874716/147809330-e038539d-6eac-453e-95a9-4843495eb0cc.PNG"/>     
+<img width="400" img height = "300" alt="StudentDownload" src="https://user-images.githubusercontent.com/77874716/147809391-ebf7ed5f-d002-4487-8bc8-2c0aee31a1a1.PNG"/>
 
-## Student Page, now can download the assignment:
-<img width="440" alt="StudentDownload" src="https://user-images.githubusercontent.com/77874716/147809391-ebf7ed5f-d002-4487-8bc8-2c0aee31a1a1.PNG">
 
