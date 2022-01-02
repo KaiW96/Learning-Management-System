@@ -4,8 +4,16 @@ SELECT * FROM user;
 --Select all from student
 Select * FROM student;
 
+--Select all from teacher;
+SELECT * FROM teacher;
+
 --Select a student based on studentID
 SELECT firstname, lastname FROM user,student WHERE student.username = user.username AND studentID = 1000;
+
+--Display first name, last name for all teachers
+SELECT firstname,lastname from teacher, user WHERE teacher.username = user.username;
+--Display first name, last name for all teaching assistants
+SELECT firstname,lastname from teacher, user WHERE teacher.username = user.username AND isTA = "TA"; 
 
 --Select teacher information based on username
 --prints TeacherID, first name, last name, teaching Assistant Status
@@ -54,34 +62,16 @@ SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA
 		teacher.username = user.username AND 
 		isTA = "TA";
 
-
-
-
-INSERT INTO takes(courseid,studentID) VALUES(457,1000);
-INSERT INTO takes(courseid,studentID) VALUES(457,1002);
-INSERT INTO takes(courseid,studentID) VALUES(511,1003);
-
-INSERT INTO takes(courseid,studentID) VALUES(471,1000);
-INSERT INTO takes(courseid,studentID) VALUES(471,1001);
-INSERT INTO takes(courseid,studentID) VALUES(471,1002);
-INSERT INTO takes(courseid,studentID) VALUES(471,1003);
-
-INSERT INTO takes(courseid,studentID) VALUES(480,1000);
-INSERT INTO takes(courseid,studentID) VALUES(480,1001);
-INSERT INTO takes(courseid,studentID) VALUES(480,1002);
-INSERT INTO takes(courseid,studentID) VALUES(480,1003);
-
-INSERT INTO takes(courseid,studentID) VALUES(511,1000);
-INSERT INTO takes(courseid,studentID) VALUES(511,1001);
-INSERT INTO takes(courseid,studentID) VALUES(511,1002);
-INSERT INTO takes(courseid,studentID) VALUES(511,1003);
-
+--Select course information based on students
+--Prints out all courses along with all of its students
 SELECT course.courseid, course.name, user.firstname, user.lastname, user.username, student.studentid
 	FROM takes, course, student, user
 	WHERE takes.courseid = course.courseid AND 
 		student.studentid = takes.studentid AND
 		student.username = user.username;
-
+		
+--Select course/student information based on specific course
+--Prints out all students for that course
 SELECT course.courseid, course.name, user.firstname, user.lastname, user.username, student.studentid
 	FROM takes, course, student, user
 	WHERE takes.courseid = course.courseid AND 
@@ -89,6 +79,8 @@ SELECT course.courseid, course.name, user.firstname, user.lastname, user.usernam
 		student.username = user.username AND
 		course.courseid = 471;
 
+--Select course/student information based on specific student name
+--Prints out all courses for that student
 SELECT course.courseid, course.name, user.firstname, user.lastname, user.username, student.studentid
 	FROM takes, course, student, user
 	WHERE takes.courseid = course.courseid AND 
@@ -96,14 +88,9 @@ SELECT course.courseid, course.name, user.firstname, user.lastname, user.usernam
 		student.username = user.username AND
 		user.firstname = "Jay";
 
-SELECT * FROM student;
-SELECT * FROM teacher;
-SELECT * FROM user;
-SELECT firstname,lastname from teacher, user WHERE teacher.username = user.username;
-SELECT firstname,lastname from teacher, user WHERE teacher.username = user.username AND isTA = "TA"; 
-## Select all TA
 
-##Selecting all students and revealing their info	
+--Select course/student information based on specific student name
+--Prints out all courses for that student
 SELECT DISTINCT course.courseid,course.name, student.studentID, firstname, lastname, user.username 
 	from user,student,course, takes 
 	WHERE student.studentID = takes.studentID 
@@ -111,17 +98,20 @@ SELECT DISTINCT course.courseid,course.name, student.studentID, firstname, lastn
 		AND user.firstname = "Jay";
 		
 
-## Insert into document
+--Insert into document
+--used for testing purposes
 INSERT INTO document(id, file, courseid, teacherid) VALUES (1, "lecture.pdf", 471, 10001);
 
-## Select all the documents for a course
+--Select all the documents for a course
+--used for testing purposes
 SELECT DISTINCT document.id, file, TO_BASE64(file),
     FROM_BASE64(TO_BASE64(file))
 	FROM course, document, user
 		WHERE course.courseID = document.courseid AND
 			  course.courseid = 471;
 
-## Delete a document in the course for teacher
+--Delete a document in the course for teacher
+--used for testing purposes
 DELETE FROM document where document.id = 2;
 
 ##Select all teachers evaluation: outputs, firstname, lastname, teacherid and Questions
