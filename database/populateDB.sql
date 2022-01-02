@@ -1,13 +1,15 @@
---DROP DATABASE lmsdb; //Run this in the MySQL client when you want to clear the databse
--- find the source of your database file
+--DROP DATABASE lmsdb; //Run this in the MySQL client when you want to clear the database
+--find the source of your database file
 --source C:\Users\--your path--\lmsdb.sql
 
 --Use the database
 use lmsdb; 
 
+--Quickly populate the database with students, teachers, admin, courses and relationships
+
 --Populate users
+--Must populate users before assigning a role
 INSERT INTO user(username,firstname,lastname,address,role,password,email) VALUES ("JayAdmin","Jay","Gurjar","Chinook street","admin","Jay234","Jay@gmail.com");
-INSERT INTO admin(adminid,username) values (10,"JayAdmin");
 
 INSERT INTO user(username,firstname,lastname,address,role,password,email) VALUES ("JayStudent","Jay","Gurjar","Chinook street","student","Jay123","JayGurjar@gmail.com");
 INSERT INTO user(username,firstname,lastname,address,role,password,email) VALUES ("AliStudent","Ali","Siddiqi","Skyview 123","student","Ali234","AliSiddiqi@gmail.com");
@@ -27,13 +29,16 @@ INSERT INTO user(username,firstname,lastname,address,role,password,email) VALUES
 INSERT INTO user(username,firstname,lastname,address,role,password,email) VALUES ("ChrisMossmanTA","Christopher","Mossman","Downtown street","teacher","Chris123","ChrisMossman@gmail.com");
 INSERT INTO user(username,firstname,lastname,address,role,password,email) VALUES ("DeanTeacherOfMultipleCourses","Dean","TeachesMultipleCourses","TFDL","teacher","Dean123","DeanTeachesMultipleCourses@gmail.com");
 
---Populate students
+--Assign admin role
+INSERT INTO admin(adminid,username) values (10,"JayAdmin");
+
+--Assign student roles
 INSERT INTO student(username,studentID,major,year) VALUES("JayStudent",1000,"CPSC",3);
 INSERT INTO student(username,studentID,major,year) VALUES("AliStudent",1001,"CPSC",3);
 INSERT INTO student(username,studentID,major,year) VALUES("KaiStudent",1002,"CPSC",3);
 INSERT INTO student(username,studentID,major,year) VALUES("KundaiStudent",1003,"CPSC",3);
 
---Populate teachers
+--Assign teacher roles
 INSERT INTO teacher(username,teacherid,isTA) VALUES("MoussaviTeacher",9999,"Teacher");
 INSERT INTO teacher(username,teacherid,isTA) VALUES("MourshirPourTeacher",10000,"Teacher");
 INSERT INTO teacher(username,teacherid,isTA) VALUES("Pafederl",10001,"Teacher");
@@ -50,7 +55,6 @@ INSERT INTO course(courseid, name,time, isEval, finalEval, evalComplete) VALUES(
 INSERT INTO course(courseid, name,time, isEval, finalEval, evalComplete) VALUES(511,"Embedded Systems","MWF",0,0,0);
 
 --Assign teacher to each course
-
 INSERT INTO Courseteacher(courseid,teacherid) VALUES(471,10002);
 INSERT INTO CourseTeacher(courseid,teacherid) VALUES(480,9999);
 INSERT INTO CourseTeacher(courseid,teacherid) VALUES(480,10000);
@@ -63,7 +67,6 @@ INSERT INTO CourseTeacher(courseid,teacherid) VALUES(480,10006);
 
 --Assign student course relationship
 --Multiple students can take a course and a student can take multiple courses
-
 INSERT INTO takes(courseid,studentID) VALUES(457,1000);
 INSERT INTO takes(courseid,studentID) VALUES(457,1002);
 INSERT INTO takes(courseid,studentID) VALUES(511,1003);
