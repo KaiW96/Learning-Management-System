@@ -83,8 +83,14 @@ INSERT INTO takes(courseid,studentID) VALUES(511,1001);
 INSERT INTO takes(courseid,studentID) VALUES(511,1002);
 INSERT INTO takes(courseid,studentID) VALUES(511,1003);
 
+
+
+
+
+
+
 --------------------------Below is used for testing purposes-----------------------
---------------------------Do not populate with the items below---------------------
+--------------------------Do not populate with the queries below---------------------
 
 --Populate assignments 
 --Used for testing purposes, do not run these queries
@@ -138,92 +144,3 @@ INSERT INTO submit(assignment_id,studentID, grade) VALUES ( 8, 1002, 30);
 INSERT INTO submit(assignment_id,studentID, grade) VALUES ( 9, 1002, 0);
 INSERT INTO submit(assignment_id,studentID, grade) VALUES ( 10, 1002, 100);
 
-SELECT user.firstname, user.lastname, user.username, student.studentid, submit.assignment_id, Assignment.assignment_name, submit.grade, course.courseid
-	FROM student, user, submit, Assignment, course
-	WHERE student.studentID = submit.studentID AND 
-		submit.assignment_id = Assignment.assignment_id AND 
-		student.username = user.username AND
-		course.courseid = Assignment.courseid AND
-		user.firstname = "Ali";
-
-SELECT user.firstname, user.lastname, user.username, student.studentid, submit.assignment_id, Assignment.assignment_name, submit.grade, course.courseid
-	FROM student, user, submit, Assignment, course
-	WHERE student.studentID = submit.studentID AND 
-		submit.assignment_id = Assignment.assignment_id AND 
-		student.username = user.username AND
-		course.courseid = Assignment.courseid AND
-		course.courseid = 471 AND
-		user.username = "AliStudent";
-		
-SELECT user.firstname, user.lastname, user.username, student.studentid, course.courseid, course.name, AVG(submit.grade)
-	FROM student, user, submit, Assignment, course
-	WHERE student.studentID = submit.studentID AND 
-		submit.assignment_id = Assignment.assignment_id AND 
-		student.username = user.username AND
-		user.firstname = "Ali" AND Assignment.courseid = 457;
-
-
-SELECT student.studentid, course.courseid, course.name, submit.grade, Assignment.assignment_id
-	FROM student, submit, Assignment, course
-	WHERE student.studentID = submit.studentID AND 
-		submit.assignment_id = Assignment.assignment_id AND 
-		Assignment.courseid = course.courseid 
-		and course.courseid = 471;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-INSERT INTO notification(notificationid, date, time, status, courseid) VALUES (01, "2021-11-14", "11:11:11", "Database project is due soon", 471);
-INSERT INTO notification(notificationid, date, time, status, courseid) VALUES (02, "2021-11-14", "11:11:12", "480 project starts next week!", 480);
-
-INSERT INTO receives(notificationid, studentid) VALUES (01,1000); //Gonna need a for loop to send it to all students by changing studentID
-INSERT INTO receives(notificationid, studentid) VALUES (01,1001);
-INSERT INTO receives(notificationid, studentid) VALUES (02,1000);
-INSERT INTO receives(notificationid, studentid) VALUES (02,1001);
-
-SELECT DISTINCT user.firstname, user.lastname, user.username, student.studentid, notification.status, notification.date,notification.time
-	FROM course, student, user, notification, receives
-	WHERE receives.studentID = student.studentID AND 
-		student.username = user.username AND
-		user.firstname = "Jay";
-
-INSERT INTO communication(communication_id, date) VALUES (01, "2021-11-14");
-INSERT INTO communication(communication_id, date) VALUES (02, "2021-11-14");
-
-INSERT INTO discussion(username, name, content,communication_id) VALUES ("JayStudent", "Jay", "I just completed 471 API, project looks great!", 01);
-INSERT INTO discussion(username, name, content, communication_id) VALUES("AliStudent", "Ali", "Good job Jay, I now want you to build an app!", 01);
-
-INSERT INTO email_list(email, studentID, communication_id) VALUES ("JayGurjar@gmail.com", 1000, 01);
-INSERT INTO email_list(email, studentID, communication_id) VALUES ("AliSiddiqi@gmail.com", 1000, 01);
-
-INSERT INTO writes(communication_id, studentID) VALUES (01, 1000);
-INSERT INTO writes(communication_id, studentID) VALUES (02, 1000);
-
-SELECT DISTINCT user.firstname, user.lastname, communication.communication_id, discussion.content, email_list.email
-	FROM user, student, writes, communication, discussion, email_list
-	WHERE user.username = student.username AND
-		student.studentID = writes.studentID AND 
-		writes.communication_id = communication.communication_id AND
-		communication.communication_id = email_list.communication_id AND
-		communication.communication_id = discussion.communication_id;
