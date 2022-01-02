@@ -13,14 +13,14 @@ SELECT teacherid, firstname, lastname, isTA FROM user,teacher WHERE teacher.user
 
 --Select course information based on teacher username,
 --prints courseID, course name, teacher first and last name, Teaching Assistant status
-
 SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA 
 	FROM courseteacher, course, user, teacher
 	WHERE courseteacher.courseid = course.courseid AND 
 		teacher.teacherid = courseteacher.teacherid AND 
 		teacher.username = user.username;
 
-
+--Select course information based on teacherID,
+--prints courseID, course name, teacher first and last name, Teaching Assistant status
 SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA 
 	FROM courseteacher, course, user, teacher
 	WHERE courseteacher.courseid = course.courseid AND 
@@ -28,6 +28,8 @@ SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA
 		teacher.username = user.username AND
 		teacher.teacherid = 10006;
 
+--Select course information based on courseID,
+--prints courseID, course name, teacher first and last name, Teaching Assistant status, teacher email
 SELECT course.courseid, course.name, user.firstname,  user.lastname, teacher.isTA, user.email
 	FROM courseteacher, course, user, teacher
 	WHERE courseteacher.courseid = course.courseid AND 
