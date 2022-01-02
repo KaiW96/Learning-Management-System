@@ -42,14 +42,19 @@ SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA
 	WHERE courseteacher.courseid = course.courseid AND 
 		teacher.teacherid = courseteacher.teacherid AND 
 		teacher.username = user.username AND 
-		isTA = "TA";
+		course.courseid = 480;
 
+--Select course information based on Teaching assistant status,
+--Only select from teaching assistants
+--prints courseID, course name, teacher first and last name, Teaching Assistant status
 SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA 
 	FROM courseteacher, course, user, teacher
 	WHERE courseteacher.courseid = course.courseid AND 
 		teacher.teacherid = courseteacher.teacherid AND 
 		teacher.username = user.username AND 
-		course.courseid = 480;
+		isTA = "TA";
+
+
 
 
 INSERT INTO takes(courseid,studentID) VALUES(457,1000);

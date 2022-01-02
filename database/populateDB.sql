@@ -61,42 +61,8 @@ INSERT INTO CourseTeacher(courseid,teacherid) VALUES(511,10005);
 INSERT INTO Courseteacher(courseid,teacherid) VALUES(471,10006);
 INSERT INTO CourseTeacher(courseid,teacherid) VALUES(480,10006);
 
-
-SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA 
-	FROM courseteacher, course, user, teacher
-	WHERE courseteacher.courseid = course.courseid AND 
-		teacher.teacherid = courseteacher.teacherid AND 
-		teacher.username = user.username;
-
-
-SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA 
-	FROM courseteacher, course, user, teacher
-	WHERE courseteacher.courseid = course.courseid AND 
-		teacher.teacherid = courseteacher.teacherid AND 
-		teacher.username = user.username AND
-		teacher.teacherid = 10006;
-
-SELECT course.courseid, course.name, user.firstname,  user.lastname, teacher.isTA, user.email
-	FROM courseteacher, course, user, teacher
-	WHERE courseteacher.courseid = course.courseid AND 
-		teacher.teacherid = courseteacher.teacherid AND 
-		teacher.username = user.username AND 
-		course.courseid = 471;
-
-SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA 
-	FROM courseteacher, course, user, teacher
-	WHERE courseteacher.courseid = course.courseid AND 
-		teacher.teacherid = courseteacher.teacherid AND 
-		teacher.username = user.username AND 
-		isTA = "TA";
-
-SELECT course.courseid, course.name, user.firstname, user.lastname, teacher.isTA 
-	FROM courseteacher, course, user, teacher
-	WHERE courseteacher.courseid = course.courseid AND 
-		teacher.teacherid = courseteacher.teacherid AND 
-		teacher.username = user.username AND 
-		course.courseid = 480;
-
+--Assign student course relationship
+--Multiple students can take a course and a student can take multiple courses
 
 INSERT INTO takes(courseid,studentID) VALUES(457,1000);
 INSERT INTO takes(courseid,studentID) VALUES(457,1002);
