@@ -1,5 +1,6 @@
 --The queries below allow easy access to database information
 --Many queries were used in the api to access the database
+--Run in MySQL command line Client
 
 --Select all from user
 SELECT * FROM user;
