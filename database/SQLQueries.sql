@@ -2,7 +2,7 @@
 --Many queries were used in the api to access the database
 --Run in MySQL command line Client
 
---Updated 
+--Updated January 3rd 2022
 
 
 --Select all from user
