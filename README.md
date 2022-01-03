@@ -23,10 +23,12 @@ Steps to compile and run this application
 
 1. Clone The Repository on your local device.
 2. If your local device already has a mysql table that is named "lmsdb", drop it.
-3. Source the sql file on the MySQL Command Line(make sure to include your full path in the command)
+3. Source the sql file on the MySQL Command Line Client(make sure to include your full path in the command)
   
 For example:
   ```C:\Users\---Your path---\Learning-Management-System\database\lmsdb.sql```
+
+To quickly populate the application with users and relationships, run the populate populateDB.sql file in MySQL Command Line Client.
   
 4. Navigate back to Learning-Management-System folder and in a terminal, enter the following commands
 
