@@ -59,7 +59,7 @@ you will need to download the connector from the website https://www.lfd.uci.edu
    In the second terminal, go to the backend directory by first entering 
 	```cd backend```
    then
-	```python app.py```
+	```python app.py```.
 	
 # Sample Screenshots
 
