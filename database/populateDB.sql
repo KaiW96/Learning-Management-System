@@ -1,6 +1,7 @@
 --DROP DATABASE lmsdb; //Run this in the MySQL client when you want to clear the database
 --find the source of your database file
 --source C:\Users\--your path--\lmsdb.sql
+--Populate the database section by section. Later parts of this file is used for testing purposes.
 
 --Use the database
 use lmsdb; 
