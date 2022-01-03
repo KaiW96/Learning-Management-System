@@ -28,7 +28,7 @@ Steps to compile and run this application
 For example:
   ```C:\Users\---Your path---\Learning-Management-System\database\lmsdb.sql```
 
-To quickly populate the application with users and relationships, run the populate populateDB.sql file in MySQL Command Line Client.
+To quickly populate the application with users and relationships, run the populateDB.sql file in MySQL Command Line Client.
   
 4. Navigate back to Learning-Management-System folder and in a terminal, enter the following commands
 
