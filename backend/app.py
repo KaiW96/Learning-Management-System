@@ -16,6 +16,9 @@ from random import randrange
 
 app = Flask(__name__)
 
+""" -----MySQL connection setup-----
+	Change the password to the 
+	password of your system 		"""
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PORT'] = 3306
