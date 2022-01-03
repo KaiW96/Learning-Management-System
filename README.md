@@ -55,7 +55,7 @@ you will need to download the connector from the website https://www.lfd.uci.edu
 	```pip install flask-mysqldb```
 
 8. Now that you have all the dependencies needed to run this application, we will open two terminals. In the first terminal run
-	```npm start```
+	```npm start```.
    In the second terminal, go to the backend directory by first entering 
 	```cd backend```
    then
