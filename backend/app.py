@@ -1,3 +1,11 @@
+""" 
+app.py 
+Final version
+Updated January 3rd 2022
+"""
+
+
+""" -----imports------"""
 from flask import Flask, json, jsonify, request, render_template, request, redirect, url_for, session
 import flask
 from flask_mysqldb import MySQL
