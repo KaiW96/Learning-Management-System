@@ -2,6 +2,9 @@
 --Many queries were used in the api to access the database
 --Run in MySQL command line Client
 
+--Updated 
+
+
 --Select all from user
 SELECT * FROM user;
 
