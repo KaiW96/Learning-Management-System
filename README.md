@@ -2,12 +2,6 @@
 
 Updated: January 2022
 
-## Authors
-* Jay Gurjar
-* Kai Wang
-* Kundai Dziwa
-* Ali Siddiqi
-
 # Introduction
 
 The learning management system is a lightweight web application which assists in student learning. 
