@@ -1,6 +1,6 @@
 # Learning Management System
 
-Updated: January 2022
+Updated: May 2022
 
 # Introduction
 
@@ -12,7 +12,7 @@ send student-teacher evaluation forms to see who is the best and worst teachers 
 
 # Video Demonstration
 
-A one minute video demonstrating the most important features such as students class list, registration and teachers student list.
+A one minute video demonstrating the most important features such as students class list, registration and teachers student list. In the beginner I show the two terminals running with the first being ```npm start``` and the second being ```python app.py```. 
 
 https://user-images.githubusercontent.com/77874716/168676667-28e9eff9-4a73-4c73-8939-2f61d90a77a6.mp4
 
