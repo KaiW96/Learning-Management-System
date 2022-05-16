@@ -10,6 +10,11 @@ view class list, upload files for grading and download files uploaded by the tea
 of each student in specific classes that they are teaching, view assignments and give feedback. An admin has the privilege to modify student/teacher profiles, add or remove courses to students/teachers and 
 send student-teacher evaluation forms to see who is the best and worst teachers for each class.
 
+# Video Demonstration
+
+A one minute video demonstrating the most important features such as students class list, registration and teachers student list.
+https://user-images.githubusercontent.com/77874716/168676667-28e9eff9-4a73-4c73-8939-2f61d90a77a6.mp4
+
 
 # Installation
 
